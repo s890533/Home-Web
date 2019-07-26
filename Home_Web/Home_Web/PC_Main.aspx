@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <title>PC Main</title>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-        <%--Space End --%><%--Title3 Start --%>
+        <%--Space End --%><%--Button Start --%>
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col">
@@ -79,9 +79,9 @@
                     </div>
                     <div class="col-lg-auto">
                         <asp:Panel ID="Panel1" runat="server" >
-                            <asp:Button ID="Button_register" runat="server" Text="Register" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large" />
-                            <asp:Button ID="Button_signin" runat="server" Text="Sign In" Width="300" type="button" class="btn btn-primary btn-lg" Height="100" Font-Size="XX-Large"/>
-                            <asp:Button ID="Button_manager" runat="server" Text="Manager" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large"/>
+                            <asp:Button ID="Button_register" runat="server" Text="Register" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_register_Click" />
+                            <asp:Button ID="Button_signin" runat="server" Text="Sign In" Width="300" type="button" class="btn btn-primary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_signin_Click"/>
+                            <asp:Button ID="Button_manager" runat="server" Text="Manager" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_manager_Click"/>
                         </asp:Panel>
                     </div>
                     <div class="col">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </div>
-        <%--Title3 End --%><%--Space Start --%>
+        <%--Button End --%><%--Space Start --%>
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col">

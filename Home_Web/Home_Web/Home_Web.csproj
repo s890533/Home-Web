@@ -70,6 +70,7 @@
     <Content Include="default.aspx" />
     <Content Include="Mobile_Main.aspx" />
     <Content Include="PC_Main.aspx" />
+    <Content Include="PC_SignIn.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +94,13 @@
     </Compile>
     <Compile Include="PC_Main.aspx.designer.cs">
       <DependentUpon>PC_Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PC_SignIn.aspx.cs">
+      <DependentUpon>PC_SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PC_SignIn.aspx.designer.cs">
+      <DependentUpon>PC_SignIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

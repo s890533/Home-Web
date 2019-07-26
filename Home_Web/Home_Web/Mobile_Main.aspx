@@ -15,6 +15,7 @@
             <%--Title Start --%>
             <div class="container-fluid">
                 <div class="row align-items-center">
+                    
                     <div class="col">
                       
                         <asp:ScriptManager ID="ScriptManager1" runat="server">
@@ -46,11 +47,12 @@
         <%--Space End --%><%--Button Start --%>
             <div class="container-fluid">
                 <div class="row align-items-center">
+                    
                     <div class="col">
                       
                     </div>
                     <div class="col-lg-auto" style="height:100px">
-                        <asp:Button ID="Button_register" runat="server" Text="Register" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large"/>
+                        <asp:Button ID="Button_register" runat="server" Text="Register" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_register_Click"/>
                     </div>
                     <div class="col">
                      
@@ -60,11 +62,12 @@
         <%--Button End --%><%--Button Start --%>
             <div class="container-fluid">
                 <div class="row align-items-center">
+                    
                     <div class="col">
                       
                     </div>
                     <div class="col-lg-auto" style="height:100px">
-                        <asp:Button ID="Button_signin" runat="server" Text="Sign In" Width="300" type="button" class="btn btn-primary btn-lg" Height="100" Font-Size="XX-Large"/>
+                        <asp:Button ID="Button_signin" runat="server" Text="Sign In" Width="300" type="button" class="btn btn-primary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_signin_Click"/>
                     </div>
                     <div class="col">
                      
@@ -74,11 +77,12 @@
         <%--Button End --%><%--Button Start --%>
             <div class="container-fluid">
                 <div class="row align-items-center">
+                    
                     <div class="col">
                       
                     </div>
                     <div class="col-lg-auto" style="height:100px">
-                        <asp:Button ID="Button_manager" runat="server" Text="Manager" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large"/>
+                        <asp:Button ID="Button_manager" runat="server" Text="Manager" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_manager_Click"/>
                     </div>
                     <div class="col">
                      
@@ -102,6 +106,7 @@
         <%--Space End --%><%--Link Start --%>
             <div class="container-fluid">
                 <div class="row align-items-center">
+                    
                     <div class="col">
                       
                     </div>

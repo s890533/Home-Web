@@ -14,9 +14,46 @@ namespace Home_Web
 
         }
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
+        protected void LinkButton1_Click_X(object sender, EventArgs e)
         {
             Response.Redirect("~/PC_Main.aspx" + Request.Url.Query);
         }
+
+        protected void Button_register_Click_X(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button_signin_Click_X(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button_manager_Click_X(object sender, EventArgs e)
+        {
+
+        }
+
+        #region KEY
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            LinkButton1_Click_X( sender,  e);
+        }
+
+        protected void Button_register_Click(object sender, EventArgs e)
+        {
+            Button_register_Click_X( sender,  e);
+        }
+
+        protected void Button_signin_Click(object sender, EventArgs e)
+        {
+            Button_signin_Click_X( sender,  e);
+        }
+
+        protected void Button_manager_Click(object sender, EventArgs e)
+        {
+            Button_manager_Click_X( sender,  e);
+        }
+        #endregion
     }
 }
