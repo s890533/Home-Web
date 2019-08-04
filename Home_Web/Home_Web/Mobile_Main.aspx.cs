@@ -11,7 +11,13 @@ namespace Home_Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request.Url.AbsoluteUri.IndexOf("?") >= 0)
+            {
+                if (Request.Url.Query.IndexOf("User=") >= 0)
+                {
+                    Response.Redirect("~/Mobile_SignIn.aspx" + Request.Url.Query);
+                }
+            }
         }
 
         protected void LinkButton1_Click_X(object sender, EventArgs e)
@@ -21,12 +27,12 @@ namespace Home_Web
 
         protected void Button_register_Click_X(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Mobile_Register.aspx");
         }
 
         protected void Button_signin_Click_X(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Mobile_SignIn.aspx");
         }
 
         protected void Button_manager_Click_X(object sender, EventArgs e)

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Home_Web
 {
-    public partial class PC_SignIn : System.Web.UI.Page
+    public partial class Mobile_SignIn : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,7 +28,7 @@ namespace Home_Web
 
         protected void Button_LogIn_Click(object sender, EventArgs e)
         {
-            if(Button_LogIn.Text == "Log In")
+            if (Button_LogIn.Text == "Log In")
             {
                 if (!String.IsNullOrEmpty(TextBox_ID.Text))
                 {
@@ -75,12 +75,11 @@ namespace Home_Web
                 Button_LogIn.Text = "Log In";
                 Panel_Content.Controls.Clear();
             }
-            
         }
 
         protected void Button_Back_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/PC_Main.aspx");
+            Response.Redirect("~/Mobile_Main.aspx");
         }
     }
 }

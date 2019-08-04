@@ -1,16 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PC_SignIn.aspx.cs" Inherits="Home_Web.PC_SignIn" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PC_Register.aspx.cs" Inherits="Home_Web.PC_Register" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <title>Sign In</title>
+    <title>Register</title>
 </head>
 <body style="background-color: #003377;">
-    <form id="form1" runat="server" defaultbutton="Button_LogIn">
+    <form id="form1" runat="server">
         <div>
             <%--Title Start --%>
             <div class="container-fluid">
@@ -22,7 +23,7 @@
                       
                     </div>
                     <div class="col-lg-auto" style="height:100px">
-                      <h1 class="display-2" style="color: #FFFFFF">Sign In Home IOT</h1>
+                      <h1 class="display-2" style="color: #FFFFFF">Home IOT Register</h1>
                     </div>
                     <div class="col">
                      
@@ -87,10 +88,10 @@
                        
                     </div>
                     <div class="col"> 
-                       <asp:Button ID="Button_Back" runat="server" Text="Back" class="btn btn-secondary" Width="200px" TabIndex="1" OnClick="Button_Back_Click" />
+                       <asp:Button ID="Button_Back" runat="server" Text="Back" class="btn btn-secondary" Width="200px" TabIndex="1" OnClick="Button_Back_Click"  />
                     </div>
                     <div class="col"> 
-                        <asp:Button ID="Button_LogIn" runat="server" Text="Log In" class="btn btn-primary" Width="200px" OnClick="Button_LogIn_Click"/>
+                        <asp:Button ID="Button_LogIn" runat="server" Text="Log In" class="btn btn-primary" Width="200px" OnClick="Button_LogIn_Click" />
                     </div>
                     <div class="col"> 
                          
@@ -112,23 +113,104 @@
                     </div>
                 </div>
             </div>  
-        <%--Menu End --%><%--Content Start --%>
-        <div class="container-fluid" >
+        <%--Menu End --%><%--Space Start --%>
+            <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col"> 
-                            
+                    <div class="col">
+                      
                     </div>
-                    <div class="col">   
-                        <asp:Panel ID="Panel_Content" runat="server"></asp:Panel>
+                    <div class="col-lg-auto" style="height:50px">
+                      <h3  style="color: #FFFFFF">   </h3>
                     </div>
-                    <div class="col"> 
-                        
+                    <div class="col">
+                     
                     </div>
                 </div>
-            </div>  
-        
-        
-        <%--Content End --%>
+            </div>
+        <%--Space End --%>
+            
+            <asp:Panel ID="Panel_Register" runat="server" Enabled="False">
+                <%--Server NO Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:80px">
+                        <asp:Label ID="Label6" runat="server" Text="Server Number: " Font-Size="Large" ForeColor="White"></asp:Label>
+                        <asp:TextBox ID="TextBox_Server" runat="server" placeholder="Server NO." class="form-control" Width="250"></asp:TextBox>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Server NO End --%><%--Client NO Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:80px">
+                        <asp:Label ID="Label7" runat="server" Text="Client Number: " Font-Size="Large" ForeColor="White"></asp:Label>
+                        <asp:TextBox ID="TextBox_Client" runat="server" placeholder="Client NO." class="form-control" Width="250"></asp:TextBox>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Client NO End --%><%--Client Type Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:80px">
+                        <asp:Label ID="Label8" runat="server" Text="Client Type: " Font-Size="Large" ForeColor="White"></asp:Label>
+                        <asp:DropDownList ID="DropDownList_ClientType" runat="server" class="form-control" Width="250">
+                            <asp:ListItem>Switch</asp:ListItem>
+                            <asp:ListItem>Double Switch</asp:ListItem>
+                            <asp:ListItem>Fan</asp:ListItem>
+                            <asp:ListItem>Air conditioner</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Client Type End --%><%--Space Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:20px">
+                      <h3  style="color: #FFFFFF">   </h3>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Space End --%><%--Submit Button Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:80px">
+                        <asp:Button ID="Button_Submit" runat="server" Text="Submit Register" class="btn btn-success" Width="200px"  TabIndex="-1" OnClick="Button_Submit_Click" />
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Submit Button End --%>
+            </asp:Panel>
+            
         </div>
     </form>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

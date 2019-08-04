@@ -22,7 +22,7 @@ namespace Home_Web
 
         protected void Button_register_Click_X(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/PC_Register.aspx");
         }
 
         protected void Button_signin_Click_X(object sender, EventArgs e)
