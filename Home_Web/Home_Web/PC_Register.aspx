@@ -11,7 +11,7 @@
     <title>Register</title>
 </head>
 <body style="background-color: #003377;">
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" defaultbutton="Button_LogIn">
         <div>
             <%--Title Start --%>
             <div class="container-fluid">

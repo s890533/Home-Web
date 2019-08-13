@@ -81,7 +81,7 @@
                         <asp:Panel ID="Panel1" runat="server" >
                             <asp:Button ID="Button_register" runat="server" Text="Register" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_register_Click" />
                             <asp:Button ID="Button_signin" runat="server" Text="Sign In" Width="300" type="button" class="btn btn-primary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_signin_Click"/>
-                            <asp:Button ID="Button_manager" runat="server" Text="Manager" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_manager_Click"/>
+                            <asp:Button ID="Button_manager" runat="server" Text="Data Moniter" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_manager_Click"/>
                         </asp:Panel>
                     </div>
                     <div class="col">

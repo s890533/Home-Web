@@ -82,7 +82,7 @@
                       
                     </div>
                     <div class="col-lg-auto" style="height:100px">
-                        <asp:Button ID="Button_manager" runat="server" Text="Manager" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_manager_Click"/>
+                        <asp:Button ID="Button_manager" runat="server" Text="Data Moniter" Width="300" type="button" class="btn btn-secondary btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_manager_Click"/>
                     </div>
                     <div class="col">
                      
