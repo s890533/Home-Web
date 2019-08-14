@@ -161,6 +161,7 @@ namespace Home_Web
                 TextBox_PW.Text = "";
                 Button_LogIn.CssClass = "btn btn-primary";
                 Button_LogIn.Text = "Log In";
+                Panel_Register.Enabled = false;
             }
         }
 

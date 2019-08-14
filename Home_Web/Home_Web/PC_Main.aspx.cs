@@ -32,7 +32,7 @@ namespace Home_Web
 
         protected void Button_manager_Click_X(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/PC_Information.aspx");
         }
 
         protected void LinkButton1_Click_X(object sender, EventArgs e)
