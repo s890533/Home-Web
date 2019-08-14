@@ -8,12 +8,12 @@ using System.Web.UI.WebControls;
 
 namespace Home_Web
 {
-    public partial class PC_Information : System.Web.UI.Page
+    public partial class Mobile_Information : System.Web.UI.Page
     {
         string strConn1 = "server=tcp:HOMEIOT-SERVER,65535;database=IOT;User ID=";
         string strConn2 = ";Password=";
         string strConn3 = ";";
-        
+
         int nowID = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -184,12 +184,12 @@ namespace Home_Web
 
                             Literal_ShowInfomation.Text = sHTML;
                         }
-                            
+
                     }
                 }
                 else
                 {
-                    
+
                 }
 
                 sqlcmd.Dispose();
@@ -208,7 +208,7 @@ namespace Home_Web
         #region KEYs
         protected void Button_Back_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/PC_Main.aspx");
+            Response.Redirect("~/Mobile_Main.aspx");
         }
 
         protected void Button_LogIn_Click(object sender, EventArgs e)
@@ -225,7 +225,7 @@ namespace Home_Web
                             TextBox_PW.ReadOnly = true;
                             Button_LogIn.CssClass = "btn btn-warning";
                             Button_LogIn.Text = "Log Out";
-                            Panel_Information.Enabled = true;
+                            Panel_Register.Enabled = true;
                         }
                         else
                         {
@@ -266,11 +266,9 @@ namespace Home_Web
                 TextBox_PW.Text = "";
                 Button_LogIn.CssClass = "btn btn-primary";
                 Button_LogIn.Text = "Log In";
-                Panel_Information.Enabled = false;
-                Timer_Update.Enabled = false;
+                Panel_Register.Enabled = false;
             }
         }
-        
 
         protected void Button_Dryer_Click(object sender, EventArgs e)
         {
@@ -282,7 +280,8 @@ namespace Home_Web
 
         protected void Timer_Update_Tick(object sender, EventArgs e)
         {
-            switch (Label_Command.Text) {
+            switch (Label_Command.Text)
+            {
                 case "N/A":
 
                     break;
@@ -294,7 +293,6 @@ namespace Home_Web
                     break;
             }
         }
-
         #endregion
     }
 }

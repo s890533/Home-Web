@@ -74,6 +74,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="default.aspx" />
+    <Content Include="Mobile_Information.aspx" />
     <Content Include="Mobile_Main.aspx" />
     <Content Include="Mobile_Register.aspx" />
     <Content Include="Mobile_SignIn.aspx" />
@@ -125,6 +126,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile_Information.aspx.cs">
+      <DependentUpon>Mobile_Information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mobile_Information.aspx.designer.cs">
+      <DependentUpon>Mobile_Information.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mobile_Main.aspx.cs">
       <DependentUpon>Mobile_Main.aspx</DependentUpon>
