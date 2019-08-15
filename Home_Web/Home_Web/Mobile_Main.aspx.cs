@@ -37,7 +37,7 @@ namespace Home_Web
 
         protected void Button_manager_Click_X(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Mobile_Information.aspx");
         }
 
         #region KEY

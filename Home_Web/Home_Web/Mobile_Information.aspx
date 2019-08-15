@@ -125,7 +125,7 @@
                     </ContentTemplate>
 
                 </asp:UpdatePanel>
-                <asp:Timer ID="Timer_Update" runat="server" Interval="5000" Enabled="False" OnTick="Timer_Update_Tick"></asp:Timer>
+                <asp:Timer ID="Timer_Update" runat="server" Interval="60000" Enabled="False" OnTick="Timer_Update_Tick"></asp:Timer>
             </asp:Panel>
         </div>
     </form>

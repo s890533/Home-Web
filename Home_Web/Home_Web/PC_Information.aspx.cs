@@ -274,10 +274,17 @@ namespace Home_Web
 
         protected void Button_Dryer_Click(object sender, EventArgs e)
         {
-            Label_Command.Text = "Dryer";
-            nowID = 0;
-            Timer_Update.Enabled = true;
-            Dryer_Refresh();
+            if (Label_Command.Text == "Dryer")
+            {
+                Dryer_Refresh();
+            }
+            else
+            {
+                Dryer_Refresh();
+                Label_Command.Text = "Dryer";
+                nowID = 0;
+                Timer_Update.Enabled = true;
+            }
         }
 
         protected void Timer_Update_Tick(object sender, EventArgs e)
