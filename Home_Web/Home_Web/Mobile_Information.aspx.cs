@@ -205,7 +205,7 @@ namespace Home_Web
 
                             sHTML = sHTML + Dryer_HTML_Hour + sqlreader.GetValue(4).ToString();
 
-                            if (sqlreader.GetValue(2).ToString() == "True")
+                            if (sqlreader.GetValue(2).ToString() == "False")
                             {
                                 sHTML = sHTML + Dryer_HTML_INW + sqlreader.GetValue(2).ToString();
                             }
@@ -214,7 +214,7 @@ namespace Home_Web
                                 sHTML = sHTML + Dryer_HTML_INW_Error + sqlreader.GetValue(2).ToString();
                             }
 
-                            if (sqlreader.GetValue(3).ToString() == "True")
+                            if (sqlreader.GetValue(3).ToString() == "False")
                             {
                                 sHTML = sHTML + Dryer_HTML_OUTW + sqlreader.GetValue(3).ToString();
                             }
@@ -232,7 +232,7 @@ namespace Home_Web
                                 sHTML = sHTML + Dryer_HTML_Switch_Error + sqlreader.GetValue(5).ToString();
                             }
 
-                            if (sqlreader.GetValue(6).ToString() == "True")
+                            if (sqlreader.GetValue(6).ToString() == "False")
                             {
                                 sHTML = sHTML + Dryer_HTML_Motor + sqlreader.GetValue(6).ToString();
                             }
@@ -243,7 +243,7 @@ namespace Home_Web
 
                             sHTML = sHTML + Dryer_HTML_FanSpeed + sqlreader.GetValue(7).ToString();
 
-                            if (System.Convert.ToInt32(sqlreader.GetValue(8).ToString()) <= 59 && System.Convert.ToInt32(sqlreader.GetValue(8).ToString()) >= 53)
+                            if (System.Convert.ToInt32(sqlreader.GetValue(8).ToString()) < 65 && System.Convert.ToInt32(sqlreader.GetValue(8).ToString()) > 59)
                             {
                                 sHTML = sHTML + Dryer_HTML_H + sqlreader.GetValue(8).ToString();
                             }
