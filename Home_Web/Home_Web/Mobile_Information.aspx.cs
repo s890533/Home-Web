@@ -145,13 +145,25 @@ namespace Home_Web
         #region Dryer
         string Dryer_HTML_UpdateTime = "<body lang=ZH-TW link=\"#0563C1\" vlink=\"#954F72\"><div class=WordSection1><table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Update Time<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border:solid white 1.0pt;border-left:none;background:#002060;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
         string Dryer_HTML_Power = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Power<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#002060;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+        string Dryer_HTML_Power_Error = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Power<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#C00000;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+
         string Dryer_HTML_Hour = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Hour<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#002060;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
         string Dryer_HTML_INW = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Inside Water<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#002060;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+        string Dryer_HTML_INW_Error = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Inside Water<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#C00000;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+
         string Dryer_HTML_OUTW = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Outside Water<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#002060;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+        string Dryer_HTML_OUTW_Error = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Outside Water<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#C00000;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+
         string Dryer_HTML_Switch = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Switch<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#002060;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+        string Dryer_HTML_Switch_Error = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Switch<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#C00000;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+
         string Dryer_HTML_Motor = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Motor<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#002060;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+        string Dryer_HTML_Motor_Error = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Motor<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#C00000;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+
         string Dryer_HTML_FanSpeed = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Fan Speed<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#002060;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
         string Dryer_HTML_H = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Humidity<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#002060;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+        string Dryer_HTML_H_Error = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Humidity<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#C00000;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
+
         string Dryer_HTML_T = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr><tr style='height:42.55pt'><td width=236 style='width:176.8pt;border:solid white 1.0pt;border-top:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'>Temperature<o:p></o:p></span></p></td><td width=369 style='width:276.4pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:#002060;padding:0cm 0cm 0cm 0cm;height:42.55pt'><p class=MsoNormal align=center style='text-align:center'><span lang=EN-US style='font-size:22.0pt;color:white'><span style='color:white'>";
         string Dryer_HTML_END = "</span><span style='color:white'><o:p></o:p></span></span></p></td></tr></table><p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p></div></body>";
         private void Dryer_Refresh()
@@ -180,7 +192,67 @@ namespace Home_Web
                         {
                             nowID = System.Convert.ToInt32(sqlreader.GetValue(0).ToString());
 
-                            sHTML = Dryer_HTML_UpdateTime + sqlreader.GetValue(1).ToString() + Dryer_HTML_Power + sqlreader.GetValue(10).ToString() + Dryer_HTML_Hour + sqlreader.GetValue(4).ToString() + Dryer_HTML_INW + sqlreader.GetValue(2).ToString() + Dryer_HTML_OUTW + sqlreader.GetValue(3).ToString() + Dryer_HTML_Switch + sqlreader.GetValue(5).ToString() + Dryer_HTML_Motor + sqlreader.GetValue(6).ToString() + Dryer_HTML_FanSpeed + sqlreader.GetValue(7).ToString() + Dryer_HTML_H + sqlreader.GetValue(8).ToString() + Dryer_HTML_T + sqlreader.GetValue(9).ToString() + Dryer_HTML_END;
+                            sHTML = Dryer_HTML_UpdateTime + sqlreader.GetValue(1).ToString();
+
+                            if (sqlreader.GetValue(10).ToString() == "True")
+                            {
+                                sHTML = sHTML + Dryer_HTML_Power + sqlreader.GetValue(10).ToString();
+                            }
+                            else
+                            {
+                                sHTML = sHTML + Dryer_HTML_Power_Error + sqlreader.GetValue(10).ToString();
+                            }
+
+                            sHTML = sHTML + Dryer_HTML_Hour + sqlreader.GetValue(4).ToString();
+
+                            if (sqlreader.GetValue(2).ToString() == "True")
+                            {
+                                sHTML = sHTML + Dryer_HTML_INW + sqlreader.GetValue(2).ToString();
+                            }
+                            else
+                            {
+                                sHTML = sHTML + Dryer_HTML_INW_Error + sqlreader.GetValue(2).ToString();
+                            }
+
+                            if (sqlreader.GetValue(3).ToString() == "True")
+                            {
+                                sHTML = sHTML + Dryer_HTML_OUTW + sqlreader.GetValue(3).ToString();
+                            }
+                            else
+                            {
+                                sHTML = sHTML + Dryer_HTML_OUTW_Error + sqlreader.GetValue(3).ToString();
+                            }
+
+                            if (sqlreader.GetValue(5).ToString() == "True")
+                            {
+                                sHTML = sHTML + Dryer_HTML_Switch + sqlreader.GetValue(5).ToString();
+                            }
+                            else
+                            {
+                                sHTML = sHTML + Dryer_HTML_Switch_Error + sqlreader.GetValue(5).ToString();
+                            }
+
+                            if (sqlreader.GetValue(6).ToString() == "True")
+                            {
+                                sHTML = sHTML + Dryer_HTML_Motor + sqlreader.GetValue(6).ToString();
+                            }
+                            else
+                            {
+                                sHTML = sHTML + Dryer_HTML_Motor_Error + sqlreader.GetValue(6).ToString();
+                            }
+
+                            sHTML = sHTML + Dryer_HTML_FanSpeed + sqlreader.GetValue(7).ToString();
+
+                            if (System.Convert.ToInt32(sqlreader.GetValue(8).ToString()) <= 59 && System.Convert.ToInt32(sqlreader.GetValue(8).ToString()) >= 53)
+                            {
+                                sHTML = sHTML + Dryer_HTML_H + sqlreader.GetValue(8).ToString();
+                            }
+                            else
+                            {
+                                sHTML = sHTML + Dryer_HTML_H_Error + sqlreader.GetValue(8).ToString();
+                            }
+
+                            sHTML = sHTML + Dryer_HTML_T + sqlreader.GetValue(9).ToString() + Dryer_HTML_END;
 
                             Literal_ShowInfomation.Text = sHTML;
                         }
