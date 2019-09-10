@@ -243,7 +243,7 @@ namespace Home_Web
 
                             sHTML = sHTML + Dryer_HTML_FanSpeed + sqlreader.GetValue(7).ToString();
 
-                            if(System.Convert.ToInt32(sqlreader.GetValue(8).ToString()) < 65 && System.Convert.ToInt32(sqlreader.GetValue(8).ToString()) > 59)
+                            if(System.Convert.ToInt32(sqlreader.GetValue(8).ToString()) < 65 && sqlreader.GetValue(10).ToString() == "False")
                             {
                                 sHTML = sHTML + Dryer_HTML_H + sqlreader.GetValue(8).ToString();
                             }
