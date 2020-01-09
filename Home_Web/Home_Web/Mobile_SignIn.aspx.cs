@@ -28,6 +28,26 @@ namespace Home_Web
             {
                 TextBox_ID.Focus();
             }
+
+            if(Button_LogIn.Text == "Log In")
+            {
+                Panel_A.Enabled = false;
+                Panel_B.Enabled = false;
+                Panel_C.Enabled = false;
+                Panel_D.Enabled = false;
+                Panel_ON.Enabled = false;
+                Panel_OFF.Enabled = false;
+
+            }
+            else
+            {
+                Panel_A.Enabled = true;
+                Panel_B.Enabled = true;
+                Panel_C.Enabled = true;
+                Panel_D.Enabled = true;
+                Panel_ON.Enabled = true;
+                Panel_OFF.Enabled = true;
+            }
         }
 
         #region SQL
@@ -50,6 +70,39 @@ namespace Home_Web
             return ans;
         }
 
+        private bool SQL_Send(String Command, String ID, String PW)
+        {
+            bool ans = false;
+            try
+            {
+            SqlConnection sql = new SqlConnection(strConn1 + TextBox_ID.Text + strConn2 + TextBox_PW.Text + strConn3);
+
+            Console.WriteLine(Command);
+
+            sql.Open();
+
+            SqlCommand sqlcmd1 = new SqlCommand();
+
+            sqlcmd1.Connection = sql;
+
+            sqlcmd1.CommandText = Command;
+
+            sqlcmd1.ExecuteNonQuery();
+
+            sqlcmd1.Dispose();
+
+            sql.Dispose();//Disconnect SQL
+
+            ans = true;
+            }
+             catch
+            {
+               ans = false;
+            }
+
+            return ans;
+        }
+
         #endregion
 
         #region KEYs
@@ -65,6 +118,12 @@ namespace Home_Web
                         {
                             TextBox_ID.ReadOnly = true;
                             TextBox_PW.ReadOnly = true;
+                            Panel_A.Enabled = true;
+                            Panel_B.Enabled = true;
+                            Panel_C.Enabled = true;
+                            Panel_D.Enabled = true;
+                            Panel_ON.Enabled = true;
+                            Panel_OFF.Enabled = true;
                             Button_LogIn.CssClass = "btn btn-warning";
                             Button_LogIn.Text = "Log Out";
                         }
@@ -105,6 +164,12 @@ namespace Home_Web
                     TextBox_ID.ReadOnly = false;
                 }
                 TextBox_PW.ReadOnly = false;
+                Panel_A.Enabled = false;
+                Panel_B.Enabled = false;
+                Panel_C.Enabled = false;
+                Panel_D.Enabled = false;
+                Panel_ON.Enabled = false;
+                Panel_OFF.Enabled = false;
                 TextBox_PW.Text = "";
                 Button_LogIn.CssClass = "btn btn-primary";
                 Button_LogIn.Text = "Log In";
@@ -115,6 +180,91 @@ namespace Home_Web
         protected void Button_Back_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Mobile_Main.aspx");
+        }
+
+
+        protected void Button_A_Click(object sender, EventArgs e)
+        {
+            String SQLCommand = "INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','1','SWITCH','false');";
+
+            if (SQL_Send(SQLCommand, TextBox_ID.Text, TextBox_PW.Text))
+            {
+
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(GetType(), "message", "<script>alert('指令傳送失敗!');</script>");
+            }
+        }
+
+        protected void Button_B_Click(object sender, EventArgs e)
+        {
+            String SQLCommand = "INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','2','SWITCH','false');";
+
+            if (SQL_Send(SQLCommand, TextBox_ID.Text, TextBox_PW.Text))
+            {
+
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(GetType(), "message", "<script>alert('指令傳送失敗!');</script>");
+            }
+        }
+
+        protected void Button_C_Click(object sender, EventArgs e)
+        {
+            String SQLCommand = "INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','3','SWITCH','false');";
+
+            if (SQL_Send(SQLCommand, TextBox_ID.Text, TextBox_PW.Text))
+            {
+
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(GetType(), "message", "<script>alert('指令傳送失敗!');</script>");
+            }
+        }
+
+        protected void Button_D_Click(object sender, EventArgs e)
+        {
+            String SQLCommand = "INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','4','SWITCH','false');";
+
+            if (SQL_Send(SQLCommand, TextBox_ID.Text, TextBox_PW.Text))
+            {
+
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(GetType(), "message", "<script>alert('指令傳送失敗!');</script>");
+            }
+        }
+
+        protected void Button_ON_Click(object sender, EventArgs e)
+        {
+            String SQLCommand = "INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','1','ON','false');INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','2','ON','false');INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','3','ON','false');INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','4','ON','false');";
+
+            if (SQL_Send(SQLCommand, TextBox_ID.Text, TextBox_PW.Text))
+            {
+
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(GetType(), "message", "<script>alert('指令傳送失敗!');</script>");
+            }
+        }
+
+        protected void Button_OFF_Click(object sender, EventArgs e)
+        {
+            String SQLCommand = "INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','1','OFF','false');INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','2','OFF','false');INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','3','OFF','false');INSERT INTO DH_Table (update_time,target_number,target_action,IsActive) VALUES ('" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','4','OFF','false');";
+
+            if (SQL_Send(SQLCommand, TextBox_ID.Text, TextBox_PW.Text))
+            {
+
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(GetType(), "message", "<script>alert('指令傳送失敗!');</script>");
+            }
         }
         #endregion
     }

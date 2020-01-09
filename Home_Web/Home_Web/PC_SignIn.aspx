@@ -112,7 +112,71 @@
                     </div>
                 </div>
             </div>  
-        <%--Menu End --%><%--Content Start --%>
+        <%--Menu End --%><%--Space Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:100px">
+                      <h3  style="color: #FFFFFF">   </h3>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Space End --%><%--Button Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto">
+                        <asp:Panel ID="Panel_Switch" runat="server" >
+                            <asp:Button ID="Button_A" runat="server" Text="Switch A" Width="300" type="button" class="btn btn-dark btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_A_Click"  />
+                            <asp:Button ID="Button_B" runat="server" Text="Switch B" Width="300" type="button" class="btn btn-dark btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_B_Click"  />
+                            <asp:Button ID="Button_C" runat="server" Text="Switch C" Width="300" type="button" class="btn btn-dark btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_C_Click"  />
+                            <asp:Button ID="Button_D" runat="server" Text="Switch D" Width="300" type="button" class="btn btn-dark btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_D_Click"  />
+                        </asp:Panel>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Button End --%><%--Space Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:100px">
+                      <h3  style="color: #FFFFFF">   </h3>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Space End --%><%--Button Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto">
+                        <asp:Panel ID="Panel_Command" runat="server" >
+                            <asp:Button ID="Button_ON" runat="server" Text="All ON" Width="300" type="button" class="btn btn-success btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_ON_Click"  />
+                            <asp:Button ID="Button_OFF" runat="server" Text="All OFF" Width="300" type="button" class="btn btn-danger btn-lg" Height="100" Font-Size="XX-Large" OnClick="Button_OFF_Click"  />
+                        </asp:Panel>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Button End --%><%--Content Start --%>
         <div class="container-fluid" >
                 <div class="row align-items-center">
                     <div class="col"> 

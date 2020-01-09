@@ -89,7 +89,145 @@
                     </div>
                 </div>
             </div>  
-        <%--Menu End --%><%--Content Start --%>
+        <%--Menu End --%><%--Space Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:50px">
+                      <h3  style="color: #FFFFFF">   </h3>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Space End --%><%--Menu Start --%>
+        <div class="container-fluid" style="text-align:center;">
+                <div class="row align-items-center">
+                    <div class="col"> 
+                            
+                    </div>
+                    <div class="col"> 
+                            
+                    </div>
+                    <div class="col"> 
+                        <asp:Panel ID="Panel_A" runat="server">
+                            <asp:Button ID="Button_A" runat="server" Text="Switch A" Width="150" type="button" class="btn btn-dark btn-lg" Height="50" Font-Size="X-Large" OnClick="Button_A_Click"/>
+                        </asp:Panel>
+                        
+                    </div>
+                    <div class="col"> 
+                        <asp:Panel ID="Panel_B" runat="server">
+                        <asp:Button ID="Button_B" runat="server" Text="Switch B" Width="150" type="button" class="btn btn-dark btn-lg" Height="50" Font-Size="X-Large" OnClick="Button_B_Click"/>
+                            </asp:Panel>
+                    </div>
+                    <div class="col"> 
+                            
+                    </div>
+                    <div class="col"> 
+                         
+                    </div>
+                </div>
+            </div>  
+        <%--Menu End --%><%--Space Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:20px">
+                      <h3  style="color: #FFFFFF">   </h3>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Space End --%><%--Menu Start --%>
+        <div class="container-fluid" style="text-align:center;">
+                <div class="row align-items-center">
+                    <div class="col"> 
+                            
+                    </div>
+                    <div class="col"> 
+                            
+                    </div>
+                    <div class="col"> 
+                        <asp:Panel ID="Panel_C" runat="server">
+                        <asp:Button ID="Button_C" runat="server" Text="Switch C" Width="150" type="button" class="btn btn-dark btn-lg" Height="50" Font-Size="X-Large" OnClick="Button_C_Click"/>
+                            </asp:Panel>
+                    </div>
+                    <div class="col"> 
+                       <asp:Panel ID="Panel_D" runat="server">
+                        <asp:Button ID="Button_D" runat="server" Text="Switch D" Width="150" type="button" class="btn btn-dark btn-lg" Height="50" Font-Size="X-Large" OnClick="Button_D_Click"/>
+                           </asp:Panel>
+                    </div>
+                    <div class="col"> 
+                            
+                    </div>
+                    <div class="col"> 
+                         
+                    </div>
+                </div>
+            </div>  
+        <%--Menu End --%><%--Space Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:20px">
+                      <h3  style="color: #FFFFFF">   </h3>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Space End --%><%--Menu Start --%>
+        <div class="container-fluid" style="text-align:center;">
+                <div class="row align-items-center">
+                    <div class="col"> 
+                            
+                    </div>
+                    <div class="col"> 
+                            
+                    </div>
+                    <div class="col"> 
+                        <asp:Panel ID="Panel_ON" runat="server">
+                        <asp:Button ID="Button_ON" runat="server" Text="All ON" Width="150" type="button" class="btn btn-success btn-lg" Height="50" Font-Size="X-Large" OnClick="Button_ON_Click"/>
+                        </asp:Panel>
+                    </div>
+                    <div class="col"> 
+                        <asp:Panel ID="Panel_OFF" runat="server">
+                        <asp:Button ID="Button_OFF" runat="server" Text="All OFF" Width="150" type="button" class="btn btn-danger btn-lg" Height="50" Font-Size="X-Large" OnClick="Button_OFF_Click"/>
+                        </asp:Panel>
+                    </div>
+                    <div class="col"> 
+                            
+                    </div>
+                    <div class="col"> 
+                         
+                    </div>
+                </div>
+            </div>  
+        <%--Menu End --%><%--Space Start --%>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col">
+                      
+                    </div>
+                    <div class="col-lg-auto" style="height:20px">
+                      <h3  style="color: #FFFFFF">   </h3>
+                    </div>
+                    <div class="col">
+                     
+                    </div>
+                </div>
+            </div>
+        <%--Space End --%><%--Content Start --%>
         <div class="container-fluid" >
                 <div class="row align-items-center">
                     <div class="col"> 
